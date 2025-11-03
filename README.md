@@ -5,7 +5,7 @@ Last updated: October 2025
 
 Overview
 --------
-This repository contains the Cotopia Distributor Presign Client — a lightweight, browser-based admin/client UI that demonstrates and exercises Cotopia’s presigned upload / presigned GET flow for attachments (images/videos) and a simple posts-and-replies workflow. The client is intended for use by authorized Cotopia Distributors and Recruited Distributors as part of the Cotopia Distributor Program and is provided subject to the Master Distribution / Reseller Licensing and Partnership Agreement and the applicable Product Agreement (see licensing and distribution section below).
+This repository contains the Cotopia Distributor Presign Client — a lightweight, browser-based admin/client UI that demonstrates and exercises Cotopia’s presigned upload / presigned GET flow for attachments (images/videos) and a simple posts-and-replies workflow. The client is intended for use by authorized Cotopia Distributors and Recruited Distributors as part of the Cotopia Distributor Program and is provided subject to the Master Distribution / Reseller Licensing and Distributorship Agreement and the applicable Product Agreement (see licensing and distribution section below).
 
 This README covers:
 - What the app is and does
@@ -21,7 +21,7 @@ Project contents
 ----------------
 - `index.html` — single-file client (HTML/CSS/JS) UI (the presign client you were given).  
 - `README.md` — this document.  
-- `LICENSE` — licensing terms (if provided in repo). If not provided, distribute only per Partner Agreement.  
+- `LICENSE` — licensing terms (if provided in repo). If not provided, distribute only per Distributor Agreement.  
 - `examples/` (optional) — server examples (Node/Express, etc.) if included.  
 - `exhibits/` — program legal exhibits (Product Agreement, Exhibit F onboarding form templates) if provided.
 
@@ -232,14 +232,14 @@ Troubleshooting & common issues
 Support & contacts
 ------------------
 - First-level support: Distributor provides first-line support to its Customers per the selected Distributor Support Model.  
-- Cotopia partner support contact: `support@cotopia.org` (billing/onboarding and partner portal questions).  
+- Cotopia Distributor support contact: `support@cotopia.org` (billing/onboarding and Distributor portal questions).  
 - For security incidents: notify Cotopia immediately per Section 14 of the Master Agreement and follow escalation in Exhibit B.
 
 Legal and licensing reminders
 -----------------------------
-- This client is provided under the terms of the Master Distribution / Reseller Licensing and Partnership Agreement and the relevant Product Agreement (Exhibit A). Redistribution, branding and permitted use must follow the Tier and trademark conditions of the Product Agreement and Master Agreement (Sections 3, 4, 5, 13).  
+- This client is provided under the terms of the Master Distribution / Reseller Licensing and Distributorship Agreement and the relevant Product Agreement (Exhibit A). Redistribution, branding and permitted use must follow the Tier and trademark conditions of the Product Agreement and Master Agreement (Sections 3, 4, 5, 13).  
 - Distributors must not alter Cotopia proprietary notices or claim ownership of Cotopia IP. Any request to modify source, white-label or host alternative SaaS instances must be negotiated and documented in the Product Agreement (Tier 4 or separate SOW).  
-- Recordkeeping and remittance for Recruited Distributors: follow Exhibit F operational rules and remit required initial fees within five (5) business days to avoid partner suspension.
+- Recordkeeping and remittance for Recruited Distributors: follow Exhibit F operational rules and remit required initial fees within five (5) business days to avoid Distributor suspension.
 
 Packaging for distribution (recommended files)
 ----------------------------------------------
@@ -249,7 +249,7 @@ When packaging this client to give to Recruited Distributors, include:
 - `LICENSE` or redistribution terms (per Product Agreement)  
 - `EXAMPLE_SERVER/` — server example with instructions for generating presigns and JWTs  
 - `EXHIBIT_F_TEMPLATE.pdf` or `.docx` — onboarding/remittance form  
-- `BRAND_GUIDELINES/` — Exhibit D (if permitted) or link to Cotopia partner portal for assets  
+- `BRAND_GUIDELINES/` — Exhibit D (if permitted) or link to Cotopia Distributor portal for assets  
 - `CHANGELOG.md` — record of changes to distributed client
 
 Sample minimal developer commands (example)
@@ -266,10 +266,10 @@ Next steps for Distributor onboarding
 - Review the Product Agreement Exhibit A and confirm Tier, Territory and Distributor Support Model selection.  
 - Execute Master Agreement and Product Agreement with Cotopia and ensure Exhibit F is used for any Recruited Distributor onboarding.  
 - Set up server implementation (or use Cotopia-hosted API if provided). Ensure security controls listed above are implemented.  
-- Provide training and the packaged client to Recruited Distributors, run onboarding sessions, and submit Exhibit F remittances for any recruited partners.
+- Provide training and the packaged client to Recruited Distributors, run onboarding sessions, and submit Exhibit F remittances for any recruited Distributors.
 
 Acknowledgements & versioning
 ----------------------------
-- Author: Cotopia Partner Engineering / Partnerships  
+- Author: Cotopia Distributor Engineering / Distributorships  
 - Version: 1.0 (presign client + Distributor packaging guidance)  
 - Last updated: October 2025
