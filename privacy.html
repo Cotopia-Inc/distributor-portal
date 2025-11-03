@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Cotopia — Privacy Policy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="version" content="1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="/News/News1/a50a74b3-88f9-4937-ba0c-670d111e371a-1_all_21781.webp" />
+  <style>
+    :root{
+      --bg:#0f1720;
+      --card:#0b1220;
+      --muted:#9aa7b8;
+      --accent:#06b6d4;
+      --accent-2:#7c3aed;
+      --text:#e6eef6;
+      --radius:12px;
+      --glass: rgba(255,255,255,0.02);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+      background:
+        radial-gradient(800px 240px at 8% 12%, rgba(124,58,237,0.06), transparent 6%),
+        radial-gradient(600px 200px at 92% 88%, rgba(6,182,212,0.05), transparent 6%),
+        var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:36px;
+      line-height:1.55;
+    }
+
+    .wrap{max-width:1000px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#042A2F;font-size:20px}
+    h1{margin:0;font-size:1.2rem}
+    .meta{color:var(--muted);font-size:0.95rem;margin-top:4px}
+
+    main.card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.006));
+      border-radius:14px;padding:24px;border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+    }
+
+    h2{font-family:"Source Serif 4",serif;color:var(--accent);margin-top:18px;margin-bottom:8px}
+    p, li{font-size:0.98rem;color:var(--text);margin:0 0 10px 0}
+    ul{padding-left:1.05rem}
+    code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+    .small{font-size:0.92rem;color:var(--muted)}
+    .section{margin-top:18px;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.03)}
+    footer{margin-top:22px;color:var(--muted);font-size:0.92rem;text-align:center}
+
+    @media (max-width:720px){
+      body{padding:18px}
+      .wrap{padding:0 6px}
+    }
+
+    @media print{
+      body{background:white;color:#111;padding:12px}
+      main.card{box-shadow:none;border:none;background:white}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">CT</div>
+      <div>
+        <h1>Cotopia — Privacy Policy</h1>
+        <div class="meta">Effective date: October 2025 · Version 1.0 · Contact: <code>support@cotopia.org</code></div>
+      </div>
+    </header>
+
+    <main class="card" role="main">
+      <section>
+        <h2>1. Introduction</h2>
+        <p>At Cotopia ("we", "us", "our"), we respect your privacy. This Privacy Policy explains how we collect, use, disclose and protect personal data when you use the Cotopia Presign Client, related APIs, documentation and partner programs (collectively, the "Service"). It also describes your privacy rights and choices.</p>
+      </section>
+
+      <section class="section">
+        <h2>2. Scope</h2>
+        <p>This policy applies to (a) end users who access the client UI, (b) Distributors and Recruited Distributors authorized under Product Agreements, and (c) technical operators and integrators who configure and operate server-side components. It covers personal data processed in connection with providing and operating the Service.</p>
+      </section>
+
+      <section class="section">
+        <h2>3. Data we collect</h2>
+        <p>We collect and process the following categories of information:</p>
+        <ul>
+          <li><strong>Account & identity data:</strong> names, email addresses, roles, organization names, and profile information provided when creating accounts or invitations.</li>
+          <li><strong>Authentication & authorization data:</strong> hashed passwords, JWTs, session identifiers, and related login metadata (timestamps, IP addresses).</li>
+          <li><strong>Content metadata:</strong> post titles, HTML content submitted by admins, attachment filenames, object keys, content types and sizes (note: file payloads are uploaded directly to object storage and are not routed through the application server except as configured by your deployment).</li>
+          <li><strong>Usage & telemetry:</strong> API request logs, presign requests, download events, error logs and basic analytics to operate and improve the Service.</li>
+          <li><strong>Support & billing:</strong> support tickets, payment and invoice data required for Distributor relationships (as applicable).</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4. How we use personal data</h2>
+        <p>We use personal data to:</p>
+        <ul>
+          <li>Provide and maintain the Service (authentication, presign generation, post/reply management).</li>
+          <li>Secure the Service (detect and prevent abuse, log actions for audit and security).</li>
+          <li>Communicate with you (support, account notices, onboarding and updates).</li>
+          <li>Perform contractual obligations under Product Agreements and DPAs.</li>
+          <li>Comply with legal obligations (law enforcement requests, sanctions screening).</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>5. Legal bases for processing (where applicable)</h2>
+        <p>For users in the EU/EEA/UK, Cotopia relies on the following legal bases (as applicable):</p>
+        <ul>
+          <li>Performance of a contract (to provide the Service to Distributors and Customers).</li>
+          <li>Legitimate interests (security, fraud prevention, platform improvement), balanced against user rights.</li>
+          <li>Consent (where required for certain communications or optional features).</li>
+          <li>Legal compliance (to satisfy regulatory or legal obligations).</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>6. Sharing and disclosures</h2>
+        <p>We do not sell personal data. We may share personal data as follows:</p>
+        <ul>
+          <li><strong>With Distributors:</strong> when you are a Customer under a Distributor, relevant account and usage data may be available to that Distributor for support and administration.</li>
+          <li><strong>With service providers:</strong> trusted subprocessors (hosting providers, storage providers, malware scanners, analytics and billing providers) that process data on our behalf under confidentiality obligations.</li>
+          <li><strong>For legal reasons:</strong> to comply with law, respond to legal requests, enforce Terms, or protect rights, safety or property.</li>
+          <li><strong>Mergers & transfers:</strong> in connection with a merger, sale or reorganization of Cotopia, subject to preserving user privacy consistent with this policy.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Data storage & retention</h2>
+        <p>We retain personal data only as long as necessary to provide the Service, comply with legal obligations, resolve disputes, and enforce agreements. Retention periods may be specified in Product Agreements or DPAs. Distributors and Resellers operating their own deployments control retention of data stored on their infrastructure and must follow applicable privacy and retention obligations.</p>
+      </section>
+
+      <section class="section">
+        <h2>8. Cookies & client-side storage</h2>
+        <p>The sample client may use localStorage for convenience. Production deployments should favor secure, HttpOnly cookies for session management. Browser cookies and local storage may be used for session state, preferences and analytics depending on your deployment. You can control cookies via browser settings; however, disabling cookies may affect Service functionality.</p>
+      </section>
+
+      <section class="section">
+        <h2>9. Security measures</h2>
+        <p>We implement administrative, technical and physical safeguards to protect personal data, including encryption in transit (TLS), recommendations for encryption at rest, access controls, logging and incident response procedures. Distributors operating their own infrastructure are responsible for implementing equivalent security controls and notifying Cotopia of any security incidents per the Product Agreement.</p>
+      </section>
+
+      <section class="section">
+        <h2>10. International transfers</h2>
+        <p>Personal data may be processed in jurisdictions outside your country. Cotopia and its subprocessors will implement appropriate safeguards (e.g., standard contractual clauses, adequate protections) where required by law. Distributors should consult their Product Agreement and DPA for any data locality commitments.</p>
+      </section>
+
+      <section class="section">
+        <h2>11. Your rights</h2>
+        <p>Subject to local law, you may have rights regarding your personal data, including: access, correction, deletion, restriction, objection, and data portability. To exercise rights, contact <code>support@cotopia.org</code>. Cotopia will respond within applicable legal timelines. For EU/EEA/UK users, requests may be handled in accordance with the DPA (Exhibit E).</p>
+      </section>
+
+      <section class="section">
+        <h2>12. Data Processing Agreements & Distributors</h2>
+        <p>Where Cotopia processes personal data on behalf of a Distributor or Customer, the parties must execute a DPA (Exhibit E) that describes roles, processing details, security measures, subprocessors and data subject rights handling. Distributors operating their own hosted deployments are controllers for the personal data they collect and must provide required notices and agreements to their Customers.</p>
+      </section>
+
+      <section class="section">
+        <h2>13. Third-party services & links</h2>
+        <p>The Service may include links to third-party websites or integrate third-party services (storage providers, analytics, malware scanning). We are not responsible for third-party privacy practices. Review third-party privacy policies for details.</p>
+      </section>
+
+      <section class="section">
+        <h2>14. Children</h2>
+        <p>The Service is not directed to children under 16. We do not knowingly collect personal data from children under applicable age thresholds. If you believe we have collected such data, contact <code>support@cotopia.org</code> and we will take steps to remove it as required by law.</p>
+      </section>
+
+      <section class="section">
+        <h2>15. Changes to this policy</h2>
+        <p>We may update this Privacy Policy as needed. Material changes will show a new effective date and we will provide notice to Distributors or via the partner portal as appropriate. Continued use of the Service after the effective date constitutes acceptance of the updated policy.</p>
+      </section>
+
+      <section class="section">
+        <h2>16. Contact</h2>
+        <p>Questions, requests to exercise data rights, or reports of privacy concerns should be sent to:</p>
+        <p class="small"><strong>Email:</strong> <code>support@cotopia.org</code></p>
+      </section>
+
+      <footer class="small muted" style="margin-top:18px">
+        © Cotopia. Effective date: October 2025. For legal or privacy inquiries: <code>support@cotopia.org</code>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

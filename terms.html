@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Cotopia — Terms of Use</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="version" content="1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/News/News1/a50a74b3-88f9-4937-ba0c-670d111e371a-1_all_21781.webp" />
+  <style>
+    :root{
+      --bg:#0f1720;
+      --surface:#0b1220;
+      --muted:#9aa7b8;
+      --accent:#06b6d4;
+      --accent-2:#7c3aed;
+      --text:#e6eef6;
+      --radius:12px;
+      --card: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.008));
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+      background:
+        radial-gradient(800px 280px at 10% 10%, rgba(124,58,237,0.06), transparent 6%),
+        radial-gradient(600px 220px at 90% 90%, rgba(6,182,212,0.05), transparent 6%),
+        var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:36px;
+      line-height:1.55;
+    }
+
+    .wrap{max-width:1000px;margin:0 auto;display:block}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#042A2F;font-size:20px}
+    h1{margin:0;font-size:1.2rem}
+    .meta{color:var(--muted);font-size:0.95rem;margin-top:4px}
+
+    main.card{
+      background:var(--card);
+      border-radius:14px;padding:24px;border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 12px 40px rgba(2,6,23,0.6);
+    }
+
+    h2{font-family:"Source Serif 4",serif;color:var(--accent);margin-top:20px;margin-bottom:6px}
+    h3{color:var(--accent-2);margin-bottom:8px}
+    p, li{font-size:0.98rem;color:var(--text);margin:0 0 10px 0}
+    ul{padding-left:1.05rem}
+    code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+
+    .section{margin-top:18px;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.03)}
+    .muted{color:var(--muted)}
+    .small{font-size:0.92rem;color:var(--muted)}
+
+    footer{margin-top:22px;color:var(--muted);font-size:0.92rem;text-align:center}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    @media (max-width:720px){
+      body{padding:18px}
+      .wrap{padding:0 6px}
+    }
+
+    @media print{
+      body{background:white;color:#111;padding:12px}
+      main.card{box-shadow:none;border:none;background:white}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">CT</div>
+      <div>
+        <h1>Cotopia — Terms of Use</h1>
+        <div class="meta">Effective date: October 2025 · Version 1.0 · Contact: <code>support@cotopia.org</code></div>
+      </div>
+    </header>
+
+    <main class="card" role="main">
+      <section>
+        <h2>1. Introduction</h2>
+        <p>Welcome to the Cotopia Presign Client and related services (the "Service") provided by Cotopia ("Company", "we", "our"). These Terms of Use ("Terms") govern your access to and use of the Service, including the client UI, accompanying documentation, and any associated APIs, developer tools and partner materials. By accessing or using the Service you agree to be bound by these Terms and all applicable laws. If you are acting on behalf of an organization, you represent that you have authority to bind that organization to these Terms.</p>
+      </section>
+
+      <section class="section">
+        <h2>2. Definitions</h2>
+        <ul>
+          <li><strong>"Distributor"</strong> — an authorized partner that has executed a Master Distribution / Reseller Licensing and Partnership Agreement and Product Agreement with Cotopia.</li>
+          <li><strong>"Recruited Distributor"</strong> — a downstream partner recruited by a Distributor where permitted under the Product Agreement.</li>
+          <li><strong>"Product Agreement"</strong> — the agreement (including Exhibits) that defines licensing, Tier, Territory, fees and permitted uses for the Product.</li>
+          <li><strong>"Service"</strong> — the Cotopia Presign Client, server APIs, and associated documentation and exhibits.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>3. License & permitted uses</h2>
+        <p>Subject to your compliance with these Terms and the applicable Product Agreement, Cotopia grants you a limited, non-exclusive, non-transferable license to use the Service as specified in the Product Agreement. Distribution, rehosting, white-labeling, source redistribution, and OEM uses are permitted only to the extent set forth in the Product Agreement Tier (Tier 1–4) or in a separate written amendment signed by Cotopia.</p>
+        <p>You must not: (a) remove or alter Cotopia copyright, trademark or other proprietary notices; (b) distribute the Service beyond the rights granted by your Product Agreement; (c) reverse engineer, decompile, or attempt to derive source code except where permitted by applicable law; or (d) use the Service in violation of export laws or sanctions.</p>
+      </section>
+
+      <section class="section">
+        <h2>4. Accounts, Authentication & Security</h2>
+        <p>You are responsible for all activity that occurs under your accounts. For Distributors and operators, you must securely manage your credentials, keep JWT signing secrets and storage credentials safe (use a secrets manager), and restrict access to production secrets. The sample client stores tokens in localStorage for convenience; production deployments should use HttpOnly, Secure cookies or similarly secure mechanisms.</p>
+        <p>Report suspected compromise immediately to Cotopia at <code>support@cotopia.org</code>. You must implement reasonable administrative, technical and physical safeguards to protect personal data and credentials.</p>
+      </section>
+
+      <section class="section">
+        <h2>5. Content, HTML and XSS</h2>
+        <p>The Service permits admin users to submit HTML content. Distributors and operators must sanitize any server-persisted HTML using an allowlist sanitizer or convert content to a sanitized rendering format (e.g., Markdown). Cotopia is not liable for content posted by Users, Distributors or Recruited Distributors. You must not post content that violates applicable law or third-party rights.</p>
+      </section>
+
+      <section class="section">
+        <h2>6. Presigned URLs and Storage</h2>
+        <p>The Service uses presigned PUT and GET URLs to store and retrieve attachments from S3-style object storage. These presigned URLs are short-lived and are generated by an authenticated server component. You are responsible for:</p>
+        <ul>
+          <li>Securing access to presign-generation endpoints (admin-only for uploads);</li>
+          <li>Using short expiry times and unpredictable object keys (UUIDs, hashed prefixes);</li>
+          <li>Configuring bucket policies and CORS to limit origins and methods; and</li>
+          <li>Scanning uploaded files for malware where attachments are served to Customers.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Fees, Payments & Recruited Distributors</h2>
+        <p>Fees, Admin Fees, Continued License & Tech Support Fees, and remittance obligations are set in the Product Agreement. When a Distributor recruits a Recruited Distributor, the Distributor must remit the Recruited Distributor’s initial Continued License & Tech Support Fee (currently $79) to Cotopia within five (5) business days and submit Exhibit F with supporting paperwork. Failure to remit or provide required documentation may result in suspension of access for the Recruited Distributor.</p>
+      </section>
+
+      <section class="section">
+        <h2>8. Support & Escalation</h2>
+        <p>Distributor is the primary first-line support contact for Customers unless a Product Agreement or SOW states otherwise. Cotopia provides Distributor-only Included Tech Support to authorized Distributor personnel. Critical security incidents and escalations must be reported immediately to <code>support@cotopia.org</code> per the escalation procedures in Exhibit B (where applicable).</p>
+      </section>
+
+      <section class="section">
+        <h2>9. Privacy & Data Processing</h2>
+        <p>If the Service processes personal data, the parties must execute a Data Processing Addendum (DPA) as set out in Exhibit E. You must process personal data consistent with applicable law and the DPA. Data residency and deletion obligations in the Product Agreement and applicable law control where specified.</p>
+      </section>
+
+      <section class="section">
+        <h2>10. Security & Audit Rights</h2>
+        <p>Distributors must implement reasonable security controls (authentication, authorization, encryption in transit and at rest, logging, malware scanning). Cotopia may audit Distributor compliance with the Product Agreement and these Terms once per 12 months with 30 days' notice. Failure to cooperate may result in suspension of rights under the Product Agreement.</p>
+      </section>
+
+      <section class="section">
+        <h2>11. Prohibited Uses</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Use the Service to distribute malware, infringing content, or material that violates laws or third-party rights;</li>
+          <li>Attempt to bypass or defeat security controls, rate limits, or access restrictions;</li>
+          <li>Export or provide access to the Service to embargoed territories or sanctioned persons in violation of applicable export laws;</li>
+          <li>Use the Service for any unlawful purpose or in a way that would harm Cotopia or other users.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>12. Termination & Suspension</h2>
+        <p>Cotopia may suspend or terminate access to the Service for material breach, non-payment, fraud, security risk, or legal requirement, with or without notice where immediate action is necessary. Upon termination, your right to use the Service ends and Cotopia may disable accounts and access. Fees paid prior to termination are non-refundable except as required by law or specified in the Product Agreement.</p>
+      </section>
+
+      <section class="section">
+        <h2>13. Disclaimers & Limitation of Liability</h2>
+        <p>The Service is provided "as is" and "as available" to the fullest extent permitted by law. Cotopia disclaims all warranties, whether express or implied, including merchantability and fitness for a particular purpose. To the maximum extent permitted by law, Cotopia's aggregate liability for any claims arising from or related to the Service is limited to the fees paid by you to Cotopia in the 12 months preceding the claim. Cotopia is not liable for indirect, incidental, special, consequential or punitive damages, loss of profits, data or business interruption.</p>
+      </section>
+
+      <section class="section">
+        <h2>14. Indemnification</h2>
+        <p>You will indemnify and hold Cotopia harmless from third-party claims arising from your breach of these Terms, your misuse of the Service, or your violation of law or third-party rights, except to the extent caused by Cotopia's gross negligence or willful misconduct.</p>
+      </section>
+
+      <section class="section">
+        <h2>15. Governing Law & Dispute Resolution</h2>
+        <p>These Terms are governed by the law specified in your Product Agreement; absent such specification, they are governed by the laws of the State of [Insert State], without regard to conflict of laws. Disputes will be resolved as set forth in the Product Agreement or Master Agreement (arbitration or courts). Replace bracketed jurisdiction with your chosen governing law in the final published version.</p>
+      </section>
+
+      <section class="section">
+        <h2>16. Changes to Terms</h2>
+        <p>Cotopia may update these Terms from time to time. Material changes will be posted with an updated effective date and, where required, provided with notice to Distributors or via the partner portal. Continued use of the Service after the effective date constitutes acceptance of the updated Terms.</p>
+      </section>
+
+      <section class="section">
+        <h2>17. Contact</h2>
+        <p>For questions, notices, or to report abuse or security incidents contact:</p>
+        <p class="small"><strong>Email:</strong> <code>support@cotopia.org</code></p>
+      </section>
+
+      <section class="section">
+        <h2>18. Miscellaneous</h2>
+        <p>These Terms (together with the Product Agreement and Master Agreement, if applicable) constitute the entire agreement between you and Cotopia regarding the Service. If any provision is held unenforceable, the remaining provisions remain in full force. No waiver is effective unless in writing and signed by an authorized Cotopia representative.</p>
+      </section>
+
+      <footer class="small muted" style="margin-top:22px">
+        © Cotopia. Last updated October 2025. For legal, licensing or billing inquiries: <code>support@cotopia.org</code>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
